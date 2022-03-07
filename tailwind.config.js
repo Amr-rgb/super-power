@@ -3,7 +3,16 @@ module.exports = {
     "./src/**/*.{html,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      mont: ['Montserrat', 'sans-serif'],
+      bebas: ['Bebas Neue', 'sans-serif']
+    },
+    extend: {
+      colors: {
+        darkBlack: '#161616',
+        lightBlack: '#252525'
+      }
+    },
   },
   plugins: [],
 }

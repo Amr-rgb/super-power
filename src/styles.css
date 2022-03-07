@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        @apply min-h-screen font-mont
+    }
+}
+
+@layer components {
+    .container {
+        @apply px-8 mx-auto md:max-w-[760px] lg:max-w-[970px] xl:max-w-[1270px]
+    }
+}
