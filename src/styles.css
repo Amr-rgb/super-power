@@ -4,12 +4,27 @@
 
 @layer base {
     body {
-        @apply min-h-screen font-mont
+        @apply min-h-screen font-mont text-white bg-[url(./assets/images/sparks.png)] bg-cover bg-center bg-no-repeat  -z-10
+    }
+    
+    img {
+        @apply -z-10 fixed left-0 right-0 bottom-0 w-screen select-none origin-bottom-left -translate-x-36 scale-[3] max-w-xs sm:max-w-sm sm:-translate-x-32 lg:translate-x-0 lg:scale-100 lg:max-w-none
     }
 }
 
 @layer components {
     .container {
         @apply px-8 mx-auto md:max-w-[760px] lg:max-w-[970px] xl:max-w-[1270px]
+    }
+
+    .wrapper {
+        @apply min-h-screen bg-[url(./assets/images/bg.jpg)] bg-cover bg-center bg-no-repeat mix-blend-screen
+    }
+}
+
+@layer utilities {
+    .title {
+        -webkit-text-stroke: 1px red;
+        text-shadow: 0 0 15px red;
     }
 }
