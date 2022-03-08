@@ -18,22 +18,37 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <div class="wrapper flex flex-col justify-between">
+    <div class="wrapper flex flex-col lg:justify-between">
+        <header class="py-6">
+            <div class="container flex items-center justify-between">
+                <a class="logo z-50 w-14 xl:w-20" href="/"><img src="./assets/images/logo.png" alt="logo"></a>
 
+                <nav>
+                    <div id="menu" class="z-50 relative cursor-pointer text-2xl lg:hidden"><i class="fa-solid fa-bars-staggered"></i></div>
+    
+                    <ul id="nav" class="z-40 fixed inset-0 bg-black flex flex-col items-center justify-center gap-y-6 text-xl font-mont uppercase italic lg:static lg:inset-auto lg:flex-row lg:bg-transparent lg:text-sm lg:gap-x-14 translate-x-full lg:translate-x-0 duration-700 ease-in-out">
+                        <li class="active list-item"><a href="/">Home</a></li>
+                        <li class="list-item"><a href="/">Info</a></li>
+                        <li class="list-item"><a href="/">Offer</a></li>
+                        <li class="list-item"><a href="/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-        <main>
+        <main class="mt-10 lg:m-0">
             <div class="container">
                 <div class="content font-bebas text-right flex flex-col items-end -skew-x-6 relative z-10">
-                    <p class="bg-red italic text-2xl px-6 -skew-x-6">Sport Class</p>
-                    <h1 class="title bg-gradient-to-tr from-red via-red text-transparent bg-clip-text -my-[11%] italic text-[35vw] sm:-my-16 sm:text-[14rem]">Fitness</h1>
+                    <p class="bg-red italic text-2xl px-6 -skew-x-6 lg:text-3xl xl:text-4xl">Sport Class</p>
+                    <h1 class="title bg-gradient-to-tr from-red via-red text-transparent bg-clip-text -my-[11%] italic text-[35vw] sm:-my-16 sm:text-[14rem] xl:text-[15rem]">Fitness</h1>
                     <p class="font-mont w-[90%] max-w-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
                 </div>
 
-                <img src="./assets/images/man.png" alt="">
+                <img class="main" src="./assets/images/man.png" alt="">
             </div>
         </main>
 
-        <footer class="flex justify-between">
+        <footer class="mt-auto flex justify-between lg:m-0">
             <div class="container">
                 <div class="left flex gap-3">
                     <a href="https://dribbble.com/amrtaha23" target="_blank"><div class="flex items-center justify-center w-6 h-6 rounded-full bg-red text-darkBlack text-xs lg:w-8 lg:h-8 lg:text-sm">
@@ -66,5 +81,6 @@
     </div>
 
     <script src="js/all.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

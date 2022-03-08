@@ -7,7 +7,7 @@
         @apply min-h-screen font-mont text-white bg-[url(./assets/images/sparks.png)] bg-cover bg-center bg-no-repeat  -z-10
     }
     
-    img {
+    img.main {
         @apply -z-10 fixed left-0 right-0 bottom-0 w-screen select-none origin-bottom-left -translate-x-36 scale-[3] max-w-xs sm:max-w-sm sm:-translate-x-32 lg:translate-x-0 lg:scale-100 lg:max-w-none
     }
 }
@@ -26,5 +26,17 @@
     .title {
         -webkit-text-stroke: 1px red;
         text-shadow: 0 0 15px red;
+    }
+
+    .list-item {
+        @apply relative after:absolute after:block after:h-[2px] after:-bottom-1 after:bg-red after:w-0 hover:after:w-full after:duration-500
+    }
+
+    .active {
+        @apply after:w-full font-semibold
+    }
+
+    .show {
+        @apply translate-x-0 touch-none
     }
 }
