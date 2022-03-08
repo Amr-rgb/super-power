@@ -28,12 +28,8 @@
         text-shadow: 0 0 15px red;
     }
 
-    .list-item {
-        @apply relative after:absolute after:block after:h-[2px] after:-bottom-1 after:bg-red after:w-0 hover:after:w-full after:duration-500
-    }
-
     .active {
-        @apply after:w-full font-semibold
+        @apply font-semibold
     }
 
     .show {
