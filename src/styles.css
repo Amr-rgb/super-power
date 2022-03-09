@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply min-h-screen font-mont text-white bg-[url(./assets/images/sparks.png)] bg-cover bg-center bg-no-repeat  -z-10
+        @apply min-h-screen font-mont text-white bg-[url(./assets/images/sparks.jpg)] bg-cover bg-center bg-no-repeat  -z-10
     }
     
     img.main {
